@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" type = "text/css" href="{{url_for('static',filename='main.css')}}">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <title>About Us</title>
+    </head>
+    <body>
+        
+        <h1><span id="otherheadlines">About Us</span></h1>
+
+        <div class = "explore">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('insight') }}">Methodology</a></li>
+                <li><a href="{{ url_for('syma') }}">Syma X5C</a></li>
+                <li><a href="{{ url_for('phantom') }}">DJI Phantom 3</a></li>
+                <li><a href="{{ url_for('udi') }}">UDI U818A</a></li>
+                <li><a href="{{ url_for('hubsan') }}">Hubsan X4</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+            </ul>
+        </div>
+        
+        <h2>Who are we?</h2>
+        
+        <div class="about">
+        <p><img src="Anup.jpg" alt="Anup" height="315" width="auto">We are a couple of guys who really had no idea what we were getting into when we first started flying a few years ago. Back then, just getting off the ground and in the air was something we would marvel at. And since then, our interest in these flying vehicles has taken off. Through our pursuit of becoming better pilots, photographers, and repairmen, our eyes have widened to the potential of these revolutionary pieces of technology. The rate at which recreational and commercial drones are advancing at is absolutely astounding, and has new and different industries taking notice.<br><br>
+Oh, and they are a blast to fly.</p>
+        </div>
+        
+        <h2>Want to reach us?</h2>
+        
+        <p>Email Us:</p>
+        
+        <p><b>mmostagirbhuiyan@gmail.com</b></p>
+        
+    <footer>
+    <p>Copyright © 2015 M MOSTAGIR BHUIYAN</p>
+    </footer>
+        <p>
+	     <a href="http://validator.w3.org/#validate_by_upload">
+	        <img style="border:0;" 
+                 src="http://www.w3.org/Icons/valid-xhtml11" alt="XHTML1.1 validation"/>
+   	     </a>
+
+
+	     <a href="http://jigsaw.w3.org/css-validator/#validate_by_upload">
+	        <img style="border:0;"
+                 src="http://jigsaw.w3.org/css-validator/images/vcss" alt="CSS validation"/>
+	     </a>
+	</p>
+    </body>
+</html>

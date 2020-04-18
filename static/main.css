@@ -1,0 +1,181 @@
+@font-face {
+    font-family: bhuiyan;
+    src: url(Ancient-Medium.ttf);
+}
+
+@font-face {
+    font-family: Copperplate;
+    src: url(Copperplate.ttf);
+}
+
+@font-face {
+    font-family: Optima;
+    src: url(Optima.ttf);
+}
+
+.explore {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 10px 10px;
+  box-shadow: 0px 5px 0px #dedede;
+}
+.explore ul {
+  list-style: none;
+  text-align: center;
+}
+.explore ul li {
+  display: inline-block;
+}
+.explore ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 10px;
+}
+.explore ul li a,
+.explore ul li a:after,
+.explore ul li a:before {
+  transition: all .5s;
+}
+.explore ul li a:hover {
+  color: #91640F;
+}
+
+.firstcharacter {
+    color: blueviolet;
+    font-size: 30px;
+    padding-right: 1px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.in-text {
+    border-radius: 40px;
+    border: 2px solid black;
+    border-image-width: 5px black;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+  
+}
+
+.in-head {
+    border: 5px dashed midnightblue;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.in-head:hover {
+    width: 800px;
+    height: 500px;
+    box-shadow: 2px 2px black;
+}
+
+body {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 35px;
+    border: 2px solid black;
+}
+
+.form p {
+    font-family: monospace;
+    font-size: 25px;
+    color: red;
+    display: block;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 25px;
+}
+
+.form a:after,
+.form a:before {
+    transition: all .5s;
+}
+
+.form a:hover {
+    color: azure;
+}
+
+.form h4 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.about img{
+    border: 2px dotted silver;
+    float: right;
+    box-shadow: 0px 5px 0px #dedede;
+}
+.youtube iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    text-indent: 25px;
+	font-family: Optima;
+	font-size: 15px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 25px;
+    opacity: 0.9;
+    filter: opacity(90%);
+}
+
+#mainheadline {
+    display: block;
+    text-shadow: 2px 3px silver;
+    font-size: 50px;
+    font-family: bhuiyan;
+    color: black;
+    opacity: 0.8;
+    filter: opacity(80%);
+}
+
+#otherheadlines {
+    font-size: 45px;
+    font-family: bhuiyan;
+    color: black;
+    opacity: 0.8;
+    filter: opacity(80%);
+}
+
+#subheadline {
+    text-align: center;
+    font-family: Copperplate;
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 15.4px;
+}
+
+#fl ul li {
+    display: grid;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-family: fantasy;
+    color: brown;
+    font-size: 15px;
+}
+
+
+footer {
+    display: block;
+    padding-top: 30px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}

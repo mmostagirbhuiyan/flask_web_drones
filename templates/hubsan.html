@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type = "text/css" href="{{url_for('static',filename='main.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='styler.css')}}">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="{{url_for('static',filename='jquery-styler.js')}}"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+         $('#bhuiyan').orbit({
+              bullets: true
+         });
+     });
+        </script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <title>Hubsan X4</title>
+    </head>
+    <body>
+        
+        <h1><span id="otherheadlines">Hubsan X4</span></h1>
+
+        <div class = "explore">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('insight') }}">Methodology</a></li>
+                <li><a href="{{ url_for('syma') }}">Syma X5C</a></li>
+                <li><a href="{{ url_for('phantom') }}">DJI Phantom 3</a></li>
+                <li><a href="{{ url_for('udi') }}">UDI U818A</a></li>
+                <li><a href="{{ url_for('hubsan') }}">Hubsan X4</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+            </ul>
+        </div>
+        
+        <span id="subheadline"><h3><a href="hubsan.html">Hubsan X4</a> is the Safest drone for indoor flying</h3></span>
+        </div>
+        
+        <div class="container">
+        <div id = "bhuiyan">
+            <img src="{{url_for('static',filename='hubsan1.jpg')}}" alt="Hubsan 1" />
+            <img src="{{url_for('static',filename='hubsan2.jpg')}}" alt="Hubsan 2" />
+            <img src="{{url_for('static',filename='hubsan3.jpg')}}" alt="Hubsan 3" />
+            <img src="{{url_for('static',filename='hubsan4.jpg')}}" alt="Hubsan 4" />
+        </div>
+            <br><br><br><br>
+            <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#Overview">Overview</a></li>
+    <li><a data-toggle="tab" href="#Features">Features</a></li>
+    <li><a data-toggle="tab" href="#Review">Review</a></li>
+    <li><a data-toggle="tab" href="#Order">Order</a></li>
+  </ul>
+</div>
+    <div class="tab-content">
+    <div id="Overview" class="tab-pane fade in active">
+      <h3>Overview</h3>
+        
+      <p>Sometimes you just don’t want to go outside. Maybe the weather sucks. Maybe you live on the 50th floor. Or maybe you’re just feeling lazy that day. Whatever the case may be, you can fly inside if you want to! The Hubsan x4 is perfect for indoor flying. You can attach the indoor hull for propller protection.<br><br>
+The Hubsan X4 H107C is one of the only minidrones with a camera under $100 that you should consider purchasing. With two modes: basic and advanced, this minidrone is perfect for beginners looking to develop and hone their skills.<br><br>
+The Hubsan X4 is so small it fits in the palm of your hand and comes with a propeller guard that allows the Hubsan to literally bounce off the walls.  Even though this little guy is small, it is surprisingly heavy, making it a suitable enough outdoor quadcopter as well. Equipped with flashy LED lights, it’s also a blast to take the X4 for a night fly.</p>
+    </div>
+    <div id="Features" class="tab-pane fade">
+      <h3>Features</h3>
+        
+    <p>
+        <ul>
+            <li>Flight Time:         7 min</li>
+            <li>Video Recording:     Not Applicable</li>
+            <li>Still Frame Quality: 0.3 MP</li>
+            <li>Charging Time:       40 min</li>
+            <li>Created For:         Beginners</li>
+            <li>Battery Type:        AA Battery</li>
+            <li>Price:               $49.99</li>
+        </ul>          
+    </p>
+    </div>
+    <div id="Review" class="tab-pane fade">
+      <h3>Review</h3>
+        
+            <ul>
+                <h4>Pros</h4>
+                <li>Price</li>
+                <li>Indoor/Outdoor</li>
+                <li>Can perform tricks</li>
+                <li>Size (allows for flying in tight spaces)</li>
+            </ul>
+            <p><br><br></p>
+            <ul>
+                <h4>Cons</h4>
+                <li>Fragile</li>
+                <li>A little out of control at times</li>
+                <li>Size - limited distance</li>
+                <li>Flight time</li>
+            </ul>
+    </div>
+    <div id="Order" class="tab-pane fade">
+      <h3>Order</h3>
+        
+      <p>Are you excited and ready to order right now???Fill out the form below and recieve are affliates exclusive discounts: <br><br></p>
+        <form action="{{ url_for('action') }}">
+            First Name:<br>
+            <input type="text" name="firstname">
+            <br>
+            Last Name:<br>
+            <input type="text" name="lastname">
+            <br>
+            Email:<br>
+            <input type="text" name="email">
+            <br><br>
+            Phone:<br>
+            <input type="number" name="cell">
+            <br><br>
+            Which Product You Want?:<br>
+            <input type="radio" name="prodcut" value="syma">Syma X5C
+            <br>
+            <input type="radio" name="prodcut" value="phantom">DJI Phantom 3
+            <br>
+            <input type="radio" name="prodcut" value="udi">UDI 818A
+            <br>
+            <input type="radio" name="prodcut" value="hubsan" checked>Hubsan X4
+            <br><br>
+            <input type="submit" value="Submit">
+            </form>
+    </div>
+  </div>
+</div>
+<footer>
+    <p>Copyright © 2015 M MOSTAGIR BHUIYAN</p>
+    </footer>
+<p>
+	     <a href="http://validator.w3.org/#validate_by_upload">
+	        <img style="border:0;" 
+                 src="http://www.w3.org/Icons/valid-xhtml11" alt="XHTML1.1 validation"/>
+   	     </a>
+
+
+	     <a href="http://jigsaw.w3.org/css-validator/#validate_by_upload">
+	        <img style="border:0;"
+                 src="http://jigsaw.w3.org/css-validator/images/vcss" alt="CSS validation"/>
+	     </a>
+	</p>
+    </body>
+</html>

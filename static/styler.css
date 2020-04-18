@@ -1,0 +1,126 @@
+#bhuiyan { 
+	width: 960px;
+	height: 800px;
+	background: #000 url(loading.gif) no-repeat center center;
+	overflow: hidden;
+}
+#bhuiyan>img,  
+#bhuiyan>div,
+#bhuiyan>a { display: none; }
+
+/* CONTAINER
+   ================================================== */
+
+div.orbit-wrapper {
+    width: 1px;
+    height: 1px;
+    position: relative;
+    margin: 0 auto;
+}
+
+div.orbit {
+    width: 1px;
+    height: 1px;
+    position: relative;
+    overflow: hidden; }
+
+div.orbit>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none; }
+
+div.orbit>a {
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 0; 
+    display: none; }
+
+.orbit>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+
+/* TIMER
+   ================================================== */
+
+div.timer {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: .6;
+    cursor: pointer;
+    z-index: 1001; }
+
+div.timer:hover span.pause,
+span.pause.active {
+    opacity: 1 }
+
+
+/* DIRECTIONAL NAV
+   ================================================== */
+
+div.slider-nav {
+    display: block }
+
+div.slider-nav span {
+    width: 78px;
+    height: 100px;
+    text-indent: -9999px;
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    margin-top: -50px;
+    cursor: pointer; }
+
+div.slider-nav span.right {
+    background: url(right-arrow.png);
+    right: 0; }
+
+div.slider-nav span.left {
+    background: url(left-arrow.png);
+    left: 0; }
+
+/* BULLET NAV
+   ================================================== */
+
+.orbit-bullets {
+    position: absolute;
+    z-index: 1000;
+    list-style: none;
+    bottom: -40px;
+    left: 50%;
+	margin-left: -50px;
+    padding: 0; }
+
+.orbit-bullets li {
+    float: left;
+    margin-left: 5px;
+    cursor: pointer;
+    color: #999;
+    text-indent: -9999px;
+    background: url(bullets.jpg) no-repeat 4px 0;
+    width: 13px;
+    height: 12px;
+    overflow: hidden; }
+
+.orbit-bullets li.active {
+    color: #222;
+    background-position: -8px 0; }
+    
+.orbit-bullets li.has-thumb {
+    background: none;
+    width: 100px;
+    height: 75px; }
+
+.orbit-bullets li.active.has-thumb {
+    background-position: 0 0;
+    border-top: 2px solid #000; }
